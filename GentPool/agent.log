@@ -1,0 +1,82 @@
+INFO:root:Creating Config from file: ./gentpool/pool/test_scholar_agent/agent.yaml
+INFO:root:Starting to load configuration from ./gentpool/pool/test_scholar_agent/agent.yaml
+INFO:root:Successfully loaded configuration from ./gentpool/pool/test_scholar_agent/agent.yaml
+INFO:root:--------------------
+INFO:root:[green]Welcome to Gentopia!
+INFO:root:--------------------
+INFO:root:[green]User: 
+INFO:root:test_scholar_agent is thinking...
+INFO:root:Done
+INFO:root:[blue]test_scholar_agent: 
+INFO:root:{"name":"search_author_by_name", "arguments":{"author":"Ziyu Yao, George Mason University","top_k":5}}
+
+INFO:root:Calling function: search_author_by_name ...
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Ziyu%20Yao%2C%20George%20Mason%20University
+INFO:httpx:HTTP Request: GET https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Ziyu%20Yao%2C%20George%20Mason%20University "HTTP/1.1 200 OK"
+INFO:scholarly:Found 1 authors
+INFO:scholarly:No more author pages
+INFO:root:Done
+INFO:root:--------------------
+INFO:root:{'name': 'Ziyu Yao', 'uid': '4lYrMNUAAAAJ', 'affiliation': 'Assistant Professor, George Mason University', 'interests': ['Natural Language Processing', 'LLMs', 'Human-AI Interaction', 'Question Answering', 'Code Generation'], 'citation': 986}
+INFO:root:--------------------
+INFO:root:test_scholar_agent is thinking...
+INFO:root:Done
+INFO:root:[blue]test_scholar_agent: 
+INFO:root:{"name":"author_uid2paper", "arguments":{"uid":"4lYrMNUAAAAJ","sort_by":"year","top_k":5}}
+
+INFO:root:Calling function: author_uid2paper ...
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4lYrMNUAAAAJ&pagesize=100
+INFO:httpx:HTTP Request: GET https://scholar.google.com/citations?hl=en&user=4lYrMNUAAAAJ&pagesize=100 "HTTP/1.1 200 OK"
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4lYrMNUAAAAJ&view_op=list_works&sortby=pubdate&pagesize=100
+INFO:httpx:HTTP Request: GET https://scholar.google.com/citations?hl=en&user=4lYrMNUAAAAJ&view_op=list_works&sortby=pubdate&pagesize=100 "HTTP/1.1 200 OK"
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&tzom=300&user=4lYrMNUAAAAJ&view_op=list_mandates&pagesize=100
+INFO:httpx:HTTP Request: GET https://scholar.google.com/citations?hl=en&tzom=300&user=4lYrMNUAAAAJ&view_op=list_mandates&pagesize=100 "HTTP/1.1 200 OK"
+INFO:root:Done
+INFO:root:--------------------
+INFO:root:{'title': 'Navigating the Shortcut Maze: A Comprehensive Analysis of Shortcut Learning in Text Classification by Language Models', 'pub_year': '2024', 'venue': 'arXiv preprint arXiv:2409.17455, 2024', 'citation': 0}
+
+{'title': 'A practical review of mechanistic interpretability for transformer-based language models', 'pub_year': '2024', 'venue': 'arXiv preprint arXiv:2407.02646, 2024', 'citation': 2}
+
+{'title': 'An Investigation of Neuron Activation as a Unified Lens to Explain Chain-of-Thought Eliciting Arithmetic Reasoning of LLMs', 'pub_year': '2024', 'venue': 'ACL 2024, 2024', 'citation': 1}
+
+{'title': 'Look Further Ahead: Testing the Limits of GPT-4 in Path Planning', 'pub_year': '2024', 'venue': 'IEEE CASE 2024, 2024', 'citation': 0}
+
+{'title': 'MathVC: An LLM-Simulated Multi-Character Virtual Classroom for Mathematics Education', 'pub_year': '2024', 'venue': 'arXiv preprint arXiv:2404.06711, 2024', 'citation': 8}
+INFO:root:--------------------
+INFO:root:test_scholar_agent is thinking...
+INFO:root:Done
+INFO:root:[blue]test_scholar_agent: 
+INFO:root:Here are the recent papers written by Ziyu Yao at George Mason University:
+
+1. **Navigating the Shortcut Maze: A Comprehensive Analysis of Shortcut Learning in Text Classification by Language Models**
+   - **Publication Year:** 2024
+   - **Venue:** arXiv preprint arXiv:2409.17455, 2024
+   - **Citations:** 0
+
+2. **A practical review of mechanistic interpretability for transformer-based language models**
+   - **Publication Year:** 2024
+   - **Venue:** arXiv preprint arXiv:2407.02646, 2024
+   - **Citations:** 2
+
+3. **An Investigation of Neuron Activation as a Unified Lens to Explain Chain-of-Thought Eliciting Arithmetic Reasoning of LLMs**
+   - **Publication Year:** 2024
+   - **Venue:** ACL 2024, 2024
+   - **Citations:** 1
+
+4. **Look Further Ahead: Testing the Limits of GPT-4 in Path Planning**
+   - **Publication Year:** 2024
+   - **Venue:** IEEE CASE 2024, 2024
+   - **Citations:** 0
+
+5. **MathVC: An LLM-Simulated Multi-Character Virtual Classroom for Mathematics Education**
+   - **Publication Year:** 2024
+   - **Venue:** arXiv preprint arXiv:2404.06711, 2024
+   - **Citations:** 8
+
+If you need more information or additional papers, feel free to ask!
+INFO:root:Done
+INFO:root:[green]User: 
+INFO:root:
+[red]Bye!
+INFO:root:
+[red]Bye!
